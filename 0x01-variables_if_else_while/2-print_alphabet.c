@@ -13,7 +13,7 @@ int main(void)
 
 	n = 'a';
 
-	while (n = 'a'; n <= 'z')
+	while (n <= 'z')
 	(
 		putchar(n);
 		n++;
