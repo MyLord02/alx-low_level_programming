@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main -Positive anything is better than negative nothing */
-/* Return (0); Success */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
