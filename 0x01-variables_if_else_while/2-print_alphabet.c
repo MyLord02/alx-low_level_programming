@@ -1,0 +1,19 @@
+#include <time.h>
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	char n:
+
+	for (n = 'a'; a <= 'z'; n++)
+	(
+		putchar(n);
+	)
+	return (0);
+}
