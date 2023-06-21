@@ -15,10 +15,10 @@ int main(void)
 	m = 48;
 	n = 'a';
 
-	while (n <= 57)
+	while (m <= 57)
 	{
-		putchar(n);
-		n++;
+		putchar(m);
+		m++;
 	}
 
 	while (n <= 'f')
