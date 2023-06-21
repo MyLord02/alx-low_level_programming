@@ -2,6 +2,7 @@
 
 /**
  * _islower- checks for lower characters.
+ * int c - input value of character 
  * Return:1 if true and 0 if false .
  */
 int _islower(int c)
