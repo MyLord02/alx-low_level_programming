@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _islower- checks for lower characters.
- * int c - input value of character 
+ * _islower - checks for lower characters.
+ *@c: character input to be checked.
  * Return:1 if true and 0 if false .
  */
 int _islower(int c)
