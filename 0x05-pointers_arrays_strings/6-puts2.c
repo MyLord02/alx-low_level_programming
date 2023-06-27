@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * puts2 - function which prins one character 
- *@str: input string 
+ * puts2 - function which prins one character
+ *@str: input string
  * Return: output
  */
 void puts2(char *str)
@@ -12,13 +12,13 @@ void puts2(char *str)
 	int counter = 0;
 	int counter2 = 0;
 
-	while (*new != '\0' )
+	while (*new != '\0')
 	{
-		*new++;
+		new++;
 		counter++;
 	}
-	values = counter -1;
-	for ( counter2 = 0 ; counter2 <= counter ; counter2++)
+	values = counter - 1;
+	for (counter2 = 0 ; counter2 <= values ; counter2++)
 	{
 		if (counter2 % 2 == 0)
 	{
