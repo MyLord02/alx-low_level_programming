@@ -4,7 +4,7 @@
  * _strca - function that concatenates two strings.
  * @src: input
  * @dest:input
- * Return: string
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
