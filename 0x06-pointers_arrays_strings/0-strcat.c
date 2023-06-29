@@ -2,9 +2,9 @@
 
 /**
  * _strca - function that concatenates two strings.
- * @src: input 
- * @dest:input 
- * Return: string 
+ * @src: input
+ * @dest:input
+ * Return: string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -24,6 +24,6 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return(dest);	
+	return (dest);
 
 }
