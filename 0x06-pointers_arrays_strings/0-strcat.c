@@ -1,4 +1,5 @@
 #include "main.h"
+#include "holberton.h"
 
 /**
  * _strca - function that concatenates two strings.
