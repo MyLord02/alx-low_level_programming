@@ -2,20 +2,24 @@
 #include <stdio.h>
 
 /**
- * _strcmp - function that copies a string.
- * @s1 : variable
- * @s2 : variable
+ * _strncpy -function that copies a string.
+ *@dest : variable
+ *@src : variable
+ *@n : the integer
  * Return: Concatinated string.
  */
 
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-int i = 0;
-int j = 0;
-while ((s1[i] == s2[j]) && s1[i] != '\0' && s2[j] != '\0')
+int i;
+for (i = 0; src[i] != '\0' && i < n; ++i)
 {
-i++;
-j++;
+dest[i] = src[i];
 }
-return (s1[i] - s2[j]);
+while (i < n)
+{
+dest[i] = '\0';
+i++;
+}
+return (dest);
 }
