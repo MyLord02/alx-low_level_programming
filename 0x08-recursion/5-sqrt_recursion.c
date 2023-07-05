@@ -25,3 +25,26 @@ return (a);
 return (-1);
 
 }
+
+/**
+ *_sqrt_recursion - evaluates a square root
+ *@n: interger to be calculated
+ *Return: The square root of an integer
+ */
+
+int _sqrt_recursion(int n)
+{
+int x;
+
+x = 0;
+if (x < 0)
+{
+return (-1);
+}
+else
+{
+return (_checker(x, n));
+}
+}
+
+
