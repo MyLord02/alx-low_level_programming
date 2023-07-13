@@ -2,6 +2,24 @@
 #include "main.h"
 
 /**
+ * _memset - fills memory with a constant byte
+ * @new_ptr: the pointer
+ * @c: the char
+ * @size: the amount of memory being filled
+ * Return: the new memory
+ */
+char *_memset(char *new_ptr, char c, unsigned int size)
+{
+char *ptr = new_ptr;
+
+while (size--)
+{
+*ptr++ = c;
+}
+return (new_ptr);
+}
+
+/**
   * _calloc - allocate memory
   * @nmemb: parameter 1
   * @size: parameter 2
@@ -20,26 +38,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 
-_memset(ptr, 0, size * nmemb);
+_memset((void *)ptr, 0, size * nmemb);
 
 return (ptr);
-}
-
-
-/**
- * _memset - fills memory with a constant byte
- * @new_ptr: the pointer
- * @c: the char
- * @size: the amount of memory being filled
- * Return: the new memory
- */
-char *_memset(char *new_ptr, char c, unsigned int size)
-{
-char *ptr = new_ptr;
-
-while (size--)
-{
-*ptr++ = c;
-}
-return (new_ptr);
 }
