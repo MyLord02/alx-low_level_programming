@@ -2,44 +2,31 @@
 #include "main.h"
 
 /**
-  * _calloc - allocate memory
-  * @nmemb: parameter 1
-  * @size: parameter 2
-  * Return: char
+  *array_range- creates an array of integers
+  *@min: variable
+  *@max: parameter 2
+  *Return: integer
   */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *array_range(int min, int max)
 {
+int i = 0, t;
 int *ptr;
-
-if (nmemb == 0 || size == 0)
+if (min > max)
+{
 return (NULL);
-
-
-ptr = malloc(nmemb * size);
+}
+ptr = malloc(sizeof(int) * (max - min));
 if (ptr == NULL)
+{
 return (NULL);
-
-_memset((void *)ptr, 0, size * nmemb);
-
-return (ptr);
 }
-
-
-/**
- * _memset - fills memory with a constant byte
- * @new_ptr: the pointer
- * @c: the char
- * @size: the amount of memory being filled
- * Return: the new memory
- */
-char *_memset(char *new_ptr, char c, unsigned int size)
+t = min;
+while (i < max - min)
 {
-char *ptr = new_ptr;
-
-while (size--)
-{
-*ptr++ = c;
+ptr[i] = t;
+t++;
+i++;
 }
-return (new_ptr);
+	return (ptr);
 }
